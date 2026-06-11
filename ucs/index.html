@@ -1,346 +1,350 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Conference website with overview, speakers, lunch information, registration, and location.">
-	<title>Conference 2026</title>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Simple one-page conference site with overview, speakers, schedule, registration, and location.">
+  <title>Unconventional Robotics Symposium 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="simple.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 </head>
 <body>
-	<header class="site-header">
-		<div class="header-inner">
-			<a class="brand" href="#overview">
-				<strong>UCS 2026</strong>
-				<span>Delft, The Netherlands</span>
-			</a>
-			<nav class="nav" aria-label="Section navigation">
-				<a href="#overview">Overview</a>
-				<a href="#speakers">Speakers</a>
-				<a href="#lunch">Lunch</a>
-				<a href="#registration">Registration</a>
-				<a href="#location">Location</a>
-			</nav>
-		</div>
-	</header>
+  <header class="topbar">
+    <div class="shell topbar-inner">
+      <a class="brand" href="#overview">
+        <span class="brand-kicker">2026</span>
+        <span class="brand-title">Unconventional Robotics Symposium</span>
+      </a>
+      <nav class="nav" aria-label="Section navigation">
+        <a href="#overview">Overview</a>
+        <a href="#speakers">Speakers</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#registration">Registration</a>
+        <a href="#organization">Organization</a>
+        <a href="#location">Location</a>
+      </nav>
+    </div>
+  </header>
 
-	<main>
-		<section class="hero" id="overview">
-			<div class="site-shell hero-panel">
-				<span class="eyebrow">01. January 2026</span>
-				<div class="hero-grid">
-					<div>
-						<h1>Conference for unconventional robotics</h1>
-						<p class="lead">The second symposium for unconventional robotics in Delft</p>
-						<div class="hero-actions">
-							<a class="button primary" href="#registration">Register</a>
-							<a class="button secondary" href="#location">Location</a>
-						</div>
-					</div>
-					<!-- <aside class="hero-facts" aria-label="Key event details">
-						<div class="fact-card">
-							<strong>Format</strong>
-							<span>Talks, discussion, lunch, and a registration section that can be wired up later.</span>
-						</div>
-						<div class="fact-card">
-							<strong>Audience</strong>
-							<span>Researchers, students, practitioners, and anyone working with robotics systems.</span>
-						</div>
-						<div class="fact-card">
-							<strong>Look and feel</strong>
-							<span>Simple, modern, and easy to extend with more sections whenever needed.</span>
-						</div>
-					</aside> -->
-				</div>
-			</div>
-		</section>
+  <main>
+    <section class="hero section" id="overview">
+      <div class="shell hero-inner">
+        <p class="eyebrow">14 - 15 September 2026 · Delft</p>
+        <h1>Symposium for unconventional robotics</h1>
+        <p class="intro">The second symposium for unconventional robotics in Delft</p>
+        <div class="hero-links">
+          <a class="button button-primary" href="https://sites.google.com/view/ucs-reg" target="_blank" rel="noopener noreferrer">Register</a>
+          <a class="button button-secondary" href="#location">See location</a>
+        </div>
+      </div>
+    </section>
 
-		<section class="section" aria-labelledby="overview-title">
-			<div class="site-shell section-panel">
-				<div class="section-header">
-					<div>
-						<h2 id="overview-title">Overview</h2>
-					</div>
-					<p>This section is a good place for a short conference summary, important dates, and a few practical facts. The layout is built from simple cards, so you can duplicate them whenever you need more content.</p>
-				</div>
-				<div class="grid-two">
-					<article class="card">
-						<h3>What the conference is about</h3>
-						<p>Bringing together researchers exploring the intersection between dynamical systems, neuromorphic computing, and robotics, in search of unconventional pathways to intelligence and control.</p>
-						<!-- <div class="meta-row">
-							<span class="meta-pill">Two-day event</span>
-							<span class="meta-pill">Talks + networking</span>
-						</div> -->
-					</article>
-					<article class="card">
-						<h3>Details</h3>
-						<div class="info-list">
-							<div class="info-row"><strong>Date</strong><span>01. January 2026</span></div>
-							<div class="info-row"><strong>Venue</strong><span>Building XY TU Delft, The Netherlands</span></div>
-							<div class="info-row"><strong>Contact</strong><span><a href="mailto:email@example.com">email@example.com</a></span></div>
-						</div>
-					</article>
-				</div>
-			</div>
-		</section>
+    <section class="section">
+      <div class="shell section-block">
+        <div class="section-header">
+          <h2>Overview</h2>
+          <!-- <p>Use this section for the abstract or short conference description. It follows the style of the reference pages: title, compact text, and a very clear content flow.</p> -->
+        </div>
+        <div class="content-grid two-up">
+          <article class="panel">
+            <h3>What it is about</h3>
+            <p>Bringing together researchers exploring the intersection between dynamical systems, neuromorphic computing, and robotics, in search of unconventional pathways to intelligence and control.</p>
+          </article>
+          <article class="panel">
+            <h3>Key information</h3>
+            <ul class="detail-list">
+              <li><strong>Date:</strong> 14 - 15 September 2026</li>
+              <li><strong>Venue:</strong> Building XY, TU Delft, The Netherlands</li>
+              <li><strong>Contact:</strong> <a href="mailto:email@example.com">email@example.com</a></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
 
-		<section class="section" id="speakers" aria-labelledby="speakers-title">
-			<div class="site-shell section-panel">
-				<div class="section-header">
-					<div>
-						<h2 id="speakers-title">Speakers</h2>
-					</div>
-					<!-- <p>Each speaker card uses the same structure, so you can copy one card and paste it as many times as needed when the speaker list grows.</p> -->
-				</div>
-				<div class="grid-four">
-					<article class="card speaker">
-						<div class="speaker-portrait" aria-hidden="true">
-                            <img src="img/cosimo.jpg" alt="Cosimo Della Santina" class="speaker-image">
-                        </div>
-						<div>
-							<small>Organizer</small>
-							<h3>Cosimo Della Santina</h3>
-							<p>Associate Professor at CoR department, TU Delft.</p>
-						</div>
-					</article>
-					<article class="card speaker">
-						<div class="speaker-portrait" aria-hidden="true"></div>
-						<div>
-							<small>Talk</small>
-							<h3>Speaker name</h3>
-							<p>Short speaker bio or talk summary goes here. Keep it brief and readable.</p>
-						</div>
-					</article>
-					<article class="card speaker">
-						<div class="speaker-portrait" aria-hidden="true"></div>
-						<div>
-							<small>Panel</small>
-							<h3>Speaker name</h3>
-							<p>Short speaker bio or talk summary goes here. Keep it brief and readable.</p>
-						</div>
-					</article>
-					<article class="card speaker">
-						<div class="speaker-portrait" aria-hidden="true"></div>
-						<div>
-							<small>Keynote</small>
-							<h3>Speaker name</h3>
-							<p>Short speaker bio or talk summary goes here. Keep it brief and readable.</p>
-						</div>
-					</article>
-					<article class="card speaker">
-						<div class="speaker-portrait" aria-hidden="true"></div>
-						<div>
-							<small>Talk</small>
-							<h3>Speaker name</h3>
-							<p>Short speaker bio or talk summary goes here. Keep it brief and readable.</p>
-						</div>
-					</article>
-					<article class="card speaker">
-						<div class="speaker-portrait" aria-hidden="true"></div>
-						<div>
-							<small>Panel</small>
-							<h3>Speaker name</h3>
-							<p>Short speaker bio or talk summary goes here. Keep it brief and readable.</p>
-						</div>
-					</article>
-					<article class="card speaker">
-						<div class="speaker-portrait" aria-hidden="true"></div>
-						<div>
-							<small>Talk</small>
-							<h3>Speaker name</h3>
-							<p>Short speaker bio or talk summary goes here. Keep it brief and readable.</p>
-						</div>
-					</article>
-					<article class="card speaker">
-						<div class="speaker-portrait" aria-hidden="true"></div>
-						<div>
-							<small>Panel</small>
-							<h3>Speaker name</h3>
-							<p>Short speaker bio or talk summary goes here. Keep it brief and readable.</p>
-						</div>
-					</article>
-				</div>
-			</div>
-		</section>
+    <section class="section" id="speakers">
+      <div class="shell section-block">
+        <div class="section-header">
+          <h2>Speakers</h2>
+          <!-- <p>A plain speaker grid that stays readable on mobile. Each card is easy to duplicate and swap with real names later.</p> -->
+        </div>
+        <div class="speaker-grid">
+          <article class="speaker-card">
+            <div class="speaker-image speaker-image--top">
+              <img src="img/Antonio_Bicchi.jpg" alt="Antonio Bicchi">
+            </div>
+            <p class="role">University of Pisa</p>
+            <h3>Antonio Bicchi</h3>
+            <p>Topic of talk here?</p>
+          </article>
+          <article class="speaker-card">
+            <div class="speaker-image">
+              <img src="img/Kunal_Masania.png" alt="Kunal Masania">
+            </div>
+            <p class="role">Delft University of Technology</p>
+            <h3>Kunal Masania</h3>
+            <p>Topic of talk here?</p>
+          </article>
+          <article class="speaker-card">
+            <div class="speaker-image speaker-image--top">
+              <img src="img/perla-maiolino.png" alt="Perla Maiolino">
+            </div>
+            <p class="role">University of Oxford</p>
+            <h3>Perla Maiolino</h3>
+            <p>Topic of talk here?</p>
+          </article>
+          <article class="speaker-card">
+            <div class="speaker-image speaker-image--top">
+              <img src="img/Amador-Guillermo.jpg" alt="Guillermo Amador">
+            </div>
+            <p class="role">Wageningen University and Research</p>
+            <h3>Guillermo Amador</h3>
+            <p>Topic of talk here?</p>
+          </article>
+        </div>
+        <div class="speaker-grid">
+          <article class="speaker-card">
+            <div class="speaker-image">
+              <!-- <img src="img/cosimo.jpg" alt="Cosimo Della Santina"> -->
+            </div>
+            <p class="role"></p>
+            <h3>Volkert van der Wijk</h3>
+            <!-- <p>Associate Professor at TU Delft.</p> -->
+          </article>
+          <article class="speaker-card">
+            <div class="speaker-image speaker-image--top">
+              <img src="img/Just Herder.jpeg" alt="Just Herder">
+            </div>
+            <p class="role">Delft University of Technology</p>
+            <h3>Just Herder</h3>
+            <p>Short bio or talk summary.</p>
+          </article>
+          <article class="speaker-card">
+            <div class="speaker-image speaker-image-placeholder"></div>
+            <!-- <p class="role">Talk</p> -->
+            <h3>Daniel Simu</h3>
+            <!-- <p>Short bio or talk summary.</p> -->
+          </article>
+          <article class="speaker-card">
+            <div class="speaker-image speaker-image--top">
+              <img src="img/david_lentink.png" alt="David Lentink">
+            </div>
+            <p class="role">University of Groningen</p>
+            <h3>David Lentink</h3>
+            <!-- <p>Short bio or talk summary.</p> -->
+          </article>
+        </div>
+      </div>
+    </section>
 
-		<section class="section" id="lunch" aria-labelledby="lunch-title">
-			<div class="site-shell section-panel">
-				<div class="section-header">
-					<div>
-						<h2 id="lunch-title">Lunch & breaks</h2>
-					</div>
-					<!-- <p>If you want a different label later, this section can easily become catering, lunch info, or practical conference information.</p> -->
-				</div>
-				<div class="grid-two">
-					<article class="card">
-						<h3>Food information</h3>
-						<!-- <p>Use this section for lunch timing, dietary options, coffee breaks, and any notes about pre-ordering or nearby food.</p> -->
-						<ul>
-							<li>Vegetarian and other dietary options can be listed here.</li>
-							<li>Add schedule details for lunch and break times.</li>
-							<li>Include nearby restaurant suggestions if useful.</li>
-						</ul>
-					</article>
-					<article class="card map-card">
-						<div id="location-map" class="map-frame" aria-label="OpenStreetMap with custom lunch markers"></div>
-					</article>
-				</div>
-			</div>
-		</section>
+    <section class="section section-spaced" id="schedule">
+      <div class="shell section-block">
+        <div class="section-header">
+          <h2>Schedule</h2>
+          <p>To be announced.</p>
+        </div>
+        <div class="panel schedule-panel">
+          <table class="schedule-table">
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Session</th>
+                <th>Speaker</th>
+              </tr>
+            </thead>
+            <!-- <tbody>
+              <tr>
+                <td>09:00</td>
+                <td>Opening remarks</td>
+                <td>Organizers</td>
+              </tr>
+              <tr>
+                <td>09:30</td>
+                <td>Keynote talk</td>
+                <td>Speaker name</td>
+              </tr>
+              <tr>
+                <td>10:30</td>
+                <td>Coffee break</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>12:00</td>
+                <td>Lunch</td>
+                <td>-</td>
+              </tr>
+            </tbody> -->
+          </table>
+        </div>
+      </div>
+    </section>
 
-		<section class="section" id="registration" aria-labelledby="registration-title">
-			<div class="site-shell section-panel">
-				<div class="section-header">
-					<div>
-						<h2 id="registration-title">Registration</h2>
-					</div>
-					<!-- <p>The form is ready as a visual placeholder and can be wired to a backend later without changing the layout.</p> -->
-				</div>
-				<form>
-					<div class="form-grid">
-						<label>
-							Full name
-							<input type="text" name="full-name" placeholder="Your name">
-						</label>
-						<label>
-							Email address
-							<input type="email" name="email" placeholder="name@example.com">
-						</label>
-						<label>
-							Affiliation
-							<input type="text" name="affiliation" placeholder="University or company">
-						</label>
-						<label>
-							Attendance type
-							<select name="attendance">
-								<option>In person</option>
-								<option>Online</option>
-								<option>Not sure yet</option>
-							</select>
-						</label>
-					</div>
-					<label>
-						Dietary notes
-						<textarea name="dietary-notes" placeholder="Add any dietary requirements or accessibility notes"></textarea>
-					</label>
-					<div class="form-actions">
-						<p class="field-note">This form does not submit yet. Replace the button action when your registration system is ready.</p>
-						<button class="button primary" type="button">Registration coming soon</button>
-					</div>
-				</form>
-			</div>
-		</section>
+    <section class="section section-spaced" id="registration">
+      <div class="shell section-block">
+        <div class="section-header">
+          <h2>Registration</h2>
+          <p>Registrations are managed through a separate system.</p>
+        </div>
+        <!-- <form class="panel form-grid">
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name">
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="name@example.com">
+          </label>
+          <label>
+            Affiliation
+            <input type="text" name="affiliation" placeholder="University or company">
+          </label>
+          <label>
+            Attendance
+            <select name="attendance">
+              <option>In person</option>
+              <option>Online</option>
+              <option>Not sure yet</option>
+            </select>
+          </label>
+          <label class="full-width">
+            Notes
+            <textarea name="notes" placeholder="Accessibility or dietary notes"></textarea>
+          </label>
+          <div class="full-width form-actions">
+            <p class="help-text">This form is only visual for now.</p>
+            <button class="button button-primary" type="button">Registration coming soon</button>
+          </div>
+        </form> -->
+        <a class="button button-primary" href="https://sites.google.com/view/ucs-reg" target="_blank" rel="noopener noreferrer">Register here</a>
+      </div>
+    </section>
 
-		<section class="section" id="location" aria-labelledby="location-title">
-			<div class="site-shell section-panel">
-				<div class="section-header">
-					<div>
-						<h2 id="location-title">Location</h2>
-					</div>
-					<!-- <p>Swap the map URL with the final venue once it is confirmed. The layout already handles the embed cleanly on desktop and mobile.</p> -->
-				</div>
-				<div class="grid-two">
-					<article class="card">
-						<h3>Venue details</h3>
-						<div class="info-list">
-							<div class="info-row"><strong>Address</strong><span>Add the exact venue address here.</span></div>
-							<div class="info-row"><strong>Arrival</strong><span>Write the best transport options for attendees.</span></div>
-							<div class="info-row"><strong>Map</strong><span>Use the embedded map on the right for directions.</span></div>
-						</div>
-					</article>
-					<article class="card" style="padding: 12px;">
-						<iframe
-							class="map-frame"
-							title="Google Maps location"
-							src="https://www.google.com/maps?q=Conference%20venue&output=embed"
-							loading="lazy"
-							referrerpolicy="no-referrer-when-downgrade"
-							allowfullscreen>
-						</iframe>
-					</article>
-				</div>
-			</div>
-		</section>
-	</main>
+    <section class="section section-spaced" id="organization">
+      <div class="shell section-block">
+        <div class="section-header">
+          <h2>Organization</h2>
+          <!-- <p>Further details to be announced.</p> -->
+        </div>
+        <div class="speaker-grid">
+          <article class="speaker-card">
+            <div class="speaker-image speaker-image--top">
+              <img src="img/cosimo.jpg" alt="Cosimo Della Santa">
+            </div>
+            <p class="role">Delft University of Technology</p>
+            <h3>Cosimo Della Santa</h3>
+          </article>
+          <article class="speaker-card">
+            <div class="speaker-image speaker-image-placeholder"></div>
+            <p class="role">Delft University of Technology</p>
+            <h3>Ebrahim ShahabiShalghouni?</h3>
+          </article>
 
-	<footer class="footer">
-		<div class="site-shell">
-			<strong>Conference 2026</strong> · Simple one-page layout ready for your content.
-		</div>
-	</footer>
+        </div>
+      </div>
+    </section>
 
-	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
-	<script>
-		const sections = [...document.querySelectorAll("section[id]")];
-		const navLinks = [...document.querySelectorAll(".nav a")];
+    <section class="section section-spaced" id="location">
+      <div class="shell section-block">
+        <div class="section-header">
+          <h2>Location</h2>
+          <p>Further details to be announced.</p>
+        </div>
+        <!-- <div class="content-grid two-up location-grid">
+          <article class="panel">
+            <h3>Venue and lunch spots</h3>
+            <ul class="detail-list">
+              <li><strong>Conference venue:</strong> main event location</li>
+              <li><strong>Lunch spot 1:</strong> near the venue</li>
+              <li><strong>Lunch spot 2:</strong> another nearby option</li>
+            </ul>
+            <p class="note">The markers are colored and the popup text can include a link.</p>
+          </article>
+          <article class="panel map-panel">
+            <div id="simple-map" class="map-frame" aria-label="OpenStreetMap map with custom markers"></div>
+          </article>
+        </div> -->
+      </div>
+    </section>
+  </main>
 
-		const setActiveLink = (id) => {
-			navLinks.forEach((link) => {
-				link.classList.toggle("active", link.getAttribute("href") === `#${id}`);
-			});
-		};
+  <footer class="footer shell">
+    <p>Unconventional Robotics Symposium 2026</p>
+  </footer>
 
-		const observer = new IntersectionObserver((entries) => {
-			const visible = entries.filter((entry) => entry.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-			if (visible) {
-				setActiveLink(visible.target.id);
-			}
-		}, {
-			rootMargin: "-35% 0px -55% 0px",
-			threshold: [0.15, 0.35, 0.6]
-		});
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script>
+    const sections = [...document.querySelectorAll('section[id]')];
+    const navLinks = [...document.querySelectorAll('.nav a')];
 
-		sections.forEach((section) => observer.observe(section));
-		setActiveLink("overview");
+    const setActiveLink = (id) => {
+      navLinks.forEach((link) => {
+        link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
+      });
+    };
 
-		const map = L.map("location-map", {
-			scrollWheelZoom: false
-		}).setView([52.001, 4.37], 15);
+    const observer = new IntersectionObserver((entries) => {
+      const visible = entries
+        .filter((entry) => entry.isIntersecting)
+        .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
 
-		const createMarkerIcon = (color) => L.divIcon({
-			className: "custom-marker-icon",
-			html: `<span class="custom-marker-pin custom-marker-pin--${color}"></span>`,
-			iconSize: [28, 36],
-			iconAnchor: [14, 34],
-			popupAnchor: [0, -30]
-		});
+      if (visible) {
+        setActiveLink(visible.target.id);
+      }
+    }, {
+      rootMargin: '-35% 0px -55% 0px',
+      threshold: [0.15, 0.35, 0.6]
+    });
 
-		L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
-			maxZoom: 19,
-			attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
-		}).addTo(map);
+    sections.forEach((section) => observer.observe(section));
+    setActiveLink('overview');
 
-		const places = [
-			{
-				name: "Conference venue",
-				coords: [52.001, 4.37],
-				color: "blue",
-				description: 'Main conference location. <a href="https://www.tudelft.nl/en" target="_blank" rel="noopener noreferrer">Venue website</a>'
-			},
-			{
-				name: "Lunch option 1",
-				coords: [52.003, 4.3665],
-				color: "green",
-				description: 'Example lunch spot. <a href="https://www.openstreetmap.org" target="_blank" rel="noopener noreferrer">View in OpenStreetMap</a>'
-			},
-			{
-				name: "Lunch option 2",
-				coords: [51.9995, 4.374],
-				color: "orange",
-				description: 'Another lunch spot. <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer">Open map link</a>'
-			}
-		];
+    const map = L.map('simple-map', {
+      scrollWheelZoom: false
+    }).setView([52.001, 4.37], 15);
 
-		places.forEach((place) => {
-			L.marker(place.coords, { icon: createMarkerIcon(place.color) })
-				.addTo(map)
-				.bindPopup(`<strong>${place.name}</strong><br>${place.description}`);
-		});
-	</script>
+    const createMarkerIcon = (color) => L.divIcon({
+      className: 'custom-marker-icon',
+      html: `<span class="custom-marker-pin custom-marker-pin--${color}"></span>`,
+      iconSize: [28, 36],
+      iconAnchor: [14, 34],
+      popupAnchor: [0, -30]
+    });
+
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+      maxZoom: 19,
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
+    }).addTo(map);
+
+    const places = [
+      {
+        name: 'Conference venue',
+        coords: [52.001, 4.37],
+        color: 'blue',
+        description: 'Main conference location.'
+      },
+      {
+        name: 'Lunch option 1',
+        coords: [52.003, 4.3665],
+        color: 'green',
+        description: 'Example lunch spot. <a href="https://www.openstreetmap.org" target="_blank" rel="noopener noreferrer">OpenStreetMap</a>'
+      },
+      {
+        name: 'Lunch option 2',
+        coords: [51.9995, 4.374],
+        color: 'orange',
+        description: 'Another lunch spot. <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer">Open map link</a>'
+      }
+    ];
+
+    places.forEach((place) => {
+      L.marker(place.coords, { icon: createMarkerIcon(place.color) })
+        .addTo(map)
+        .bindPopup(`<strong>${place.name}</strong><br>${place.description}`);
+    });
+  </script>
 </body>
 </html>
