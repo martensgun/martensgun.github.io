@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Free two-day symposium at TU Delft, 14-15 September 2026 — soft bodies, embodied intelligence, nonlinear dynamics, and unconventional robotics.">
+  <meta property="og:title" content="2nd Unconventional Robotics Symposium">
+  <meta property="og:description" content="Free two-day symposium at TU Delft, 14-15 September 2026">
+  <!-- <meta property="og:image" content="[hero image URL]"> -->
+  <title>Unconventional Robotics Symposium 2026</title>
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="simple.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+</head>
+<body>
+
+  <nav class="nav" aria-label="Section navigation">
+    <a class="brand" href="#hero">
+      <span class="brand-kicker">2026</span>
+      <span class="brand-title">Unconventional Robotics Symposium</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div class="nav-links">
+      <a href="#about">Overview</a>
+      <a href="#speakers">Speakers</a>
+      <a href="#schedule">Schedule</a>
+      <a href="#posters">Posters</a>
+      <a href="#registration">Registration</a>
+      <a href="#practical_info">Practical info</a>
+      <a href="#previous_edition">Previous edition</a>
+      <a href="#organizers">Organizers</a>
+      <a href="#location">Location</a>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ============= HERO ============= -->
+    <section class="hero section" id="hero">
+      <div class="hero-inner container">
+        <div>
+          <p class="kicker-accent">TU Delft &middot; 14&ndash;15 September 2026</p>
+          <h1>2<sup>nd</sup> <span class="hl">Unconventional</span> Robotics Symposium</h1>
+          <p class="theme">(Un)conventional sources of inspiration: Biology, Arts, Books, and beyond</p>
+          <p class="ethos">Free to attend. Low-carbon. Local. Informal, but serious.</p>
+          <div class="cta">
+            <a class="button button-disabled" href="https://sites.google.com/view/ucs-reg" target="_blank" rel="noopener noreferrer">Register</a>
+            <a class="button secondary" href="#schedule">See schedule</a>
+          </div>
+        </div>
+        <div></div>
+      </div>
+      <div class="doodles" aria-hidden="true"></div>
+    </section>
+
+    <!-- ============= OVERVIEW ============= -->
+    <section class="section" id="about">
+      <div class="container">
+        <span class="kicker">Overview</span>
+        <h2>What is it about?</h2>
+        <p>
+          The 2nd Unconventional Robotics Symposium is a free two-day event at TU Delft for researchers,
+          students, and technically-minded enthusiasts who take robotics beyond its standard assumptions;
+          through soft bodies, physical computation, embodied intelligence, nonlinear dynamics, and inspiration
+          from biology, arts, and beyond. Free for all. No registration fee.
+        </p>
+        <br>
+        <div class="content-grid">
+          <div class="panel">
+            <h3>Key information</h3>
+            <ul>
+              <li><strong>Date:</strong> 14 &ndash; 15 September 2026</li>
+              <li><strong>Location:</strong> Delft, The Netherlands</li>
+              <li><strong>Contact:</strong> <a href="mailto:c.dellasantina@tudelft.nl">c.dellasantina@tudelft.nl</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============= NAVY BAND: WHY ============= -->
+    <section class="band-dark section" id="why">
+      <div class="container">
+        <span class="kicker accent">Why</span>
+        <h2>Why this symposium exists</h2>
+        <p style="max-width: 65ch;">
+          Academic robotics conferences are valuable &mdash; but they are also expensive, carbon-heavy, and often inaccessible.
+          This symposium was born as a different model: a focused, free, local event where researchers and enthusiasts can
+          exchange ideas without the overhead. No registration fee. No need to fly. Just good talks and good discussion.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============= SPEAKERS ============= -->
+    <section class="section" id="speakers">
+      <div class="container">
+        <span class="kicker">Speakers</span>
+        <h2>Speakers</h2>
+        <p class="muted" style="margin-bottom: 1.5rem;">(More to come!)</p>
+        <div class="cards">
+          <article class="speaker-card">
+            <img src="img/Antonio_Bicchi.jpg" alt="Antonio Bicchi">
+            <p class="aff">University of Pisa</p>
+            <h3>Antonio Bicchi</h3>
+            <p class="talk">Talk title</p>
+            <p class="tag">Soft robotics</p>
+          </article>
+          <article class="speaker-card">
+            <img src="img/Kunal_Masania.png" alt="Kunal Masania">
+            <p class="aff">Delft University of Technology</p>
+            <h3>Kunal Masania</h3>
+          </article>
+          <article class="speaker-card">
+            <img src="img/perla-maiolino.png" alt="Perla Maiolino">
+            <p class="aff">University of Oxford</p>
+            <h3>Perla Maiolino</h3>
+          </article>
+          <article class="speaker-card">
+            <img src="img/Amador-Guillermo.jpg" alt="Guillermo Amador">
+            <p class="aff">Wageningen University and Research</p>
+            <h3>Guillermo Amador</h3>
+          </article>
+          <article class="speaker-card">
+            <img src="img/Volkert_vdWijk.jpg" alt="Volkert van der Wijk">
+            <p class="aff">Kinetic Art Sculptures</p>
+            <h3>Volkert van der Wijk</h3>
+          </article>
+          <article class="speaker-card">
+            <img src="img/Just Herder.jpeg" alt="Just Herder">
+            <p class="aff">Delft University of Technology</p>
+            <h3>Just Herder</h3>
+          </article>
+          <article class="speaker-card">
+            <img src="img/Daniel_Simu.jpg" alt="Daniel Simu">
+            <p class="aff">Artist &amp; creative engineer</p>
+            <h3>Daniel Simu</h3>
+          </article>
+          <article class="speaker-card">
+            <img src="img/david_lentink.png" alt="David Lentink">
+            <p class="aff">University of Groningen</p>
+            <h3>David Lentink</h3>
+          </article>
+          <article class="speaker-card">
+            <img src="img/salua_hamaza.jpg" alt="Salua Hamaza">
+            <p class="aff">Delft University of Technology</p>
+            <h3>Salua Hamaza</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+    
+    <div class="section-divider"></div>
+    <!-- ============= SCHEDULE ============= -->
+    <section class="section" id="schedule">
+      <div class="container">
+        <span class="kicker">Schedule</span>
+        <h2>Schedule</h2>
+        <p class="muted">To be announced.</p>
+        <div class="day" style="margin-top: 2rem;">
+          <div class="day-label">
+            <h2>Day 1</h2>
+            <p>14 September</p>
+          </div>
+          <div class="timeline">
+            <div class="slot">
+              <time>09:00</time>
+              <div>
+                <h3>Opening remarks</h3>
+                <p>Organizers</p>
+              </div>
+            </div>
+            <div class="slot">
+              <time>09:30</time>
+              <div>
+                <h3>Keynote talk</h3>
+                <p class="muted">Speaker name</p>
+              </div>
+            </div>
+            <div class="slot break">
+              <time>10:30</time>
+              <div>
+                <h3>Coffee break</h3>
+              </div>
+            </div>
+            <div class="slot poster">
+              <time>12:00</time>
+              <div>
+                <h3>Poster session</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="day">
+          <div class="day-label">
+            <h2>Day 2</h2>
+            <p>15 September</p>
+          </div>
+          <div class="timeline">
+            <div class="slot">
+              <time>09:00</time>
+              <div>
+                <h3>Opening remarks</h3>
+                <p>Organizers</p>
+              </div>
+            </div>
+            <div class="slot break">
+              <time>10:30</time>
+              <div>
+                <h3>Coffee break</h3>
+              </div>
+            </div>
+            <div class="slot">
+              <time>12:00</time>
+              <div>
+                <h3>Lunch</h3>
+              </div>
+            </div>
+            <div class="slot social">
+              <time>14:00</time>
+              <div>
+                <h3>Social event</h3>
+                <p class="muted">Details to be announced</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============= POSTERS ============= -->
+    <section class="band-dark section" id="posters">
+      <div class="container">
+        <span class="kicker accent">Call for posters</span>
+        <h2>Posters</h2>
+        <h3>Abstract submissions</h3>
+        <p style="max-width: 65ch;">
+          We welcome poster presentations from researchers, students, and practitioners.
+          Submit a one-page abstract describing your work.
+        </p>
+        <p style="max-width: 65ch;">
+          Submission deadline: [to be confirmed]
+        </p>
+        <br>
+        <a class="button button-disabled" href="https://docs.google.com/forms/d/e/1FAIpQLSdIYaRjVa6SswX8Qb4iMiq25CkTUQnOEMH6Q7XF8Z4Ecbb7Sw/viewform" target="_blank" rel="noopener noreferrer">Submit your abstract here</a>
+      </div>
+    </section>
+
+    <!-- ============= REGISTRATION ============= -->
+    <section class="section" id="registration">
+      <div class="container">
+        <span class="kicker">Registration</span>
+        <h2>Registration</h2>
+        <p class="muted">This form will open in [month].</p>
+        <br>
+        <div class="content-grid">
+          <div class="panel">
+            <p>Signing up is managed through a separate system. Registration is free but space is limited &mdash; sign up early.</p>
+            <br>
+            <a class="button button-disabled" href="https://docs.google.com/forms/d/e/1FAIpQLSclJ74UhVq3hiPDyskB6gYUJCL9iPptWlU7bKDGz3CyfgEx2g/viewform" target="_blank" rel="noopener noreferrer">Registration coming soon</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <div class="section-divider"></div>
+    <!-- ============= PRACTICAL INFO ============= -->
+    <section class="section" id="practical_info">
+      <div class="container">
+        <span class="kicker">Practical</span>
+        <h2>Practical info</h2>
+        <p>For people travelling from outside Delft.</p>
+        <br>
+        <h3>Getting there</h3>
+        <p>
+          Delft is 15 minutes by train from Rotterdam Centraal and 1 hour from Amsterdam Centraal.
+          More info on the <a href="https://www.ns.nl/en" target="_blank" rel="noopener noreferrer">Dutch Railways website</a>.
+          Public transport can be easily checked in &amp; out with your debit card, credit card, your mobile or smartwatch.
+          More info <a href="https://www.ovpay.nl/en/paymentcard" target="_blank" rel="noopener noreferrer">here</a>.
+        </p>
+        <br>
+        <h3>What is included</h3>
+        <p>Lunch and coffee breaks on both days are provided free of charge.</p>
+        <br>
+        <h3>Evening</h3>
+        <p>We will confirm whether there is a dinner or social event.</p>
+        <br>
+        <h3>Accommodation</h3>
+        <p>We recommend hotels in Delft city centre; campus is easily accessible by foot, bike or bus (about 5&ndash;10 minutes). Some options include:</p>
+        <br>
+        <table style="width:100%; border-collapse:collapse;">
+          <thead>
+            <tr>
+              <th style="text-align:left; padding:8px 6px;">Name</th>
+              <th style="text-align:left; padding:8px 6px;">Note</th>
+              <th style="text-align:left; padding:8px 6px;">Price 2 nights</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="padding:8px 6px;"><a href="https://www.thesocialhub.co/delft/hotel-stay/" target="_blank" rel="noopener noreferrer">The Social Hub</a></td>
+              <td style="padding:8px 6px;">Right next to the train station</td>
+              <td style="padding:8px 6px;">200€</td>
+            </tr>
+            <tr>
+              <td style="padding:8px 6px;"><a href="https://all.accor.com/hotel/B5M3/index.nl.shtml" target="_blank" rel="noopener noreferrer">ibis Styles Delft</a></td>
+              <td style="padding:8px 6px;">Right next to the train station</td>
+              <td style="padding:8px 6px;">210€</td>
+            </tr>
+            <tr>
+              <td style="padding:8px 6px;"><a href="https://www.casajulia.nl/en" target="_blank" rel="noopener noreferrer">Casa Julia</a></td>
+              <td style="padding:8px 6px;">Close to campus</td>
+              <td style="padding:8px 6px;">220€</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ============= PREVIOUS EDITION ============= -->
+    <section class="band-dark section" id="previous_edition">
+      <div class="container">
+        <span class="kicker accent">Previous edition</span>
+        <h2>Previous edition</h2>
+        <p>The first edition took place on 1 October 2025 at TU Delft</p>
+        <br>
+        <div class="gallery-grid">
+          <div class="speaker-card gallery-item">
+            <img src="https://placehold.co/600x450/e2e8f0/64748b?text=Photo+1" alt="Previous edition photo 1" loading="lazy">
+          </div>
+          <div class="speaker-card gallery-item">
+            <img src="https://placehold.co/600x450/e2e8f0/64748b?text=Photo+2" alt="Previous edition photo 2" loading="lazy">
+          </div>
+          <div class="speaker-card gallery-item">
+            <img src="https://placehold.co/600x450/e2e8f0/64748b?text=Photo+3" alt="Previous edition photo 3" loading="lazy">
+          </div>
+          <div class="speaker-card gallery-item">
+            <img src="https://placehold.co/600x450/e2e8f0/64748b?text=Photo+4" alt="Previous edition photo 4" loading="lazy">
+          </div>
+        </div>
+        <br>
+        <h3>Recording</h3>
+        <p>Watch the recordings from the first edition on <a href="https://collegerama.tudelft.nl/Mediasite/Channel/robotics-urs2025/browse/null/most-recent/null/0/null" target="_blank" rel="noopener noreferrer">Collegerama</a>.</p>
+      </div>
+    </section>
+
+    <!-- ============= ORGANIZERS ============= -->
+    <section class="section" id="organizers">
+      <div class="container">
+        <span class="kicker">Organizers</span>
+        <h2>Organizers</h2>
+        <div class="cards">
+          <article class="speaker-card">
+            <a href="https://www.tudelft.nl/en/staff/c.dellasantina/" target="_blank" rel="noopener noreferrer">
+              <img src="img/cosimo.jpg" alt="Cosimo Della Santina">
+            </a>
+            <p class="aff">Delft University of Technology</p>
+            <h3>Cosimo Della Santina</h3>
+          </article>
+          <article class="speaker-card">
+            <a href="https://www.tudelft.nl/en/staff/e.shahabishalghouni/" target="_blank" rel="noopener noreferrer">
+              <img src="img/Ebrahim_Shahabi.jpg" alt="Ebrahim Shahabi">
+            </a>
+            <p class="aff">Delft University of Technology</p>
+            <h3>Ebrahim Shahabi</h3>
+          </article>
+          <article class="speaker-card">
+            <a href="https://www.tudelft.nl/en/staff/d.farhadimachekposhti/" target="_blank" rel="noopener noreferrer">
+              <img src="img/Davood_Farhadi.jpeg" alt="Davood Farhadi">
+            </a>
+            <p class="aff">Delft University of Technology</p>
+            <h3>Davood Farhadi</h3>
+          </article>
+        </div>
+        <br>
+        <div class="organizer-meta">
+          <div class="organizer-banner">
+            <a href="https://www.tudelft.nl/robotics-institute/" target="_blank" rel="noopener noreferrer">
+              <img src="img/tudelft-ri.jpeg" alt="TU Delft Robotics Institute" class="organizer-logo">
+            </a>
+            <div class="organizer-banner-text">
+              <a href="https://www.tudelft.nl/robotics-institute/" target="_blank" rel="noopener noreferrer">
+                <h3>This is a TU Delft Robotics Institute event</h3>
+              </a>
+            </div>
+          </div>
+          <br>
+          <h3 style="font-size: 1rem;">Kindly supported by</h3>
+          <div class="sponsor-grid">
+            <div class="sponsor-placeholder">
+              <span>Coming soon</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <div class="section-divider"></div>
+    <!-- ============= LOCATION ============= -->
+    <section class="section" id="location">
+      <div class="container">
+        <span class="kicker">Location</span>
+        <h2>Location</h2>
+        <p class="muted">Somewhere in Delft&hellip; More info coming soon.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============= LIGHTBOX ============= -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+    <button class="lightbox-close" aria-label="Close">&times;</button>
+    <div class="lightbox-content">
+      <img class="lightbox-img" src="" alt="">
+    </div>
+  </div>
+
+  <!-- ============= FOOTER ============= -->
+  <footer class="footer">
+    <div class="container">
+      <p>Unconventional Robotics Symposium 2026</p>
+      <p class="muted" style="color: var(--tan-light); font-size: .9rem;">A TU Delft Robotics Institute event</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script>
+    const nav = document.querySelector('.nav');
+    const toggle = document.querySelector('.nav-toggle');
+    const navLinks = [...document.querySelectorAll('.nav-links a')];
+
+    toggle.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true' ? false : true;
+      nav.classList.toggle('is-open', expanded);
+      toggle.setAttribute('aria-expanded', expanded);
+    });
+
+    navLinks.forEach((link) => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    const sections = navLinks
+      .map(link => document.querySelector(link.getAttribute('href')))
+      .filter(Boolean);
+
+    const setActiveLink = (id) => {
+      navLinks.forEach((link) => {
+        link.classList.toggle(
+          'active',
+          link.getAttribute('href') === `#${id}`
+        );
+      });
+    };
+
+    const updateActiveSection = () => {
+      const navHeight = nav.offsetHeight;
+
+      let current = sections[0];
+
+      for (const section of sections) {
+        const rect = section.getBoundingClientRect();
+
+        if (rect.top <= navHeight + 50) {
+          current = section;
+        } else {
+          break;
+        }
+      }
+
+      setActiveLink(current.id);
+    };
+
+    window.addEventListener('scroll', updateActiveSection, {
+      passive: true
+    });
+
+    window.addEventListener('resize', updateActiveSection);
+
+    updateActiveSection();
+    
+    const mapEl = document.getElementById('simple-map');
+    if (mapEl) {
+      const map = L.map(mapEl, { scrollWheelZoom: false }).setView([52.001, 4.37], 15);
+
+      L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
+      }).addTo(map);
+
+      const createMarkerIcon = (color) => L.divIcon({
+        className: 'custom-marker-icon',
+        html: `<span class="custom-marker-pin custom-marker-pin--${color}"></span>`,
+        iconSize: [28, 36],
+        iconAnchor: [14, 34],
+        popupAnchor: [0, -30]
+      });
+
+      const places = [
+        { name: 'Conference venue', coords: [52.001, 4.37], color: 'blue', description: 'Main conference location.' },
+        { name: 'Lunch option 1', coords: [52.003, 4.3665], color: 'green', description: 'Example lunch spot. <a href="https://www.openstreetmap.org" target="_blank" rel="noopener noreferrer">OpenStreetMap</a>' },
+        { name: 'Lunch option 2', coords: [51.9995, 4.374], color: 'orange', description: 'Another lunch spot. <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer">Open map link</a>' }
+      ];
+
+      places.forEach((place) => {
+        L.marker(place.coords, { icon: createMarkerIcon(place.color) })
+          .addTo(map)
+          .bindPopup(`<strong>${place.name}</strong><br>${place.description}`);
+      });
+    }
+
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = lightbox.querySelector('.lightbox-img');
+    const lightboxClose = lightbox.querySelector('.lightbox-close');
+
+    document.querySelectorAll('.gallery-item').forEach((item) => {
+      item.addEventListener('click', () => {
+        const img = item.querySelector('img');
+        if (!img) return;
+        lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt;
+        lightbox.hidden = false;
+        document.body.style.overflow = 'hidden';
+      });
+    });
+
+    const closeLightbox = () => {
+      lightbox.hidden = true;
+      document.body.style.overflow = '';
+    };
+
+    lightboxClose.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) closeLightbox();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeLightbox();
+    });
+  </script>
+
+</body>
+</html>
